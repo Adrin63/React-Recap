@@ -9,10 +9,10 @@ function Parque(){
     const {idioma} = useContext(Context);
 
     return (
-        <div className="bg-slate-200 flex flex-col text-center">
-        <h1>{idioma == "es" ? parque.titol : parque.titol_ca}</h1>
-        <p>{idioma == "es" ? parque.text : parque.text_ca}</p>
-        <img src={parque.imatge}/>
+        <div className="bg-green-200 flex flex-col items-center p-3">
+        <h1 className="font-bold text-xl p-3">{idioma == "es" ? parque.titol : parque.titol_ca}</h1>
+        <p className="p-3 text-center">{idioma == "es" ? parque.text : parque.text_ca}</p>
+        <img className="h-60 rounded-lg" src={parque.imatge}/>
         </div>
     )
 }
