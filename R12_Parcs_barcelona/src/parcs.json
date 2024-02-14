@@ -1,0 +1,29 @@
+[
+    {
+        "titol": "Collserola, uno de los parques naturales más cercanos de Barcelona",
+        "titol_ca": "Collserola, un dels parcs naturals més propers de Barcelona",
+        "nom": "collserola",
+        "id": 1,
+        "text": "Comenzamos esta lista con los mejores parques naturales cerca de Barcelona para hablarte del Parque natural de la sierra de Collserola que se trata del espacio natural más próximo a la ciudad condal. De hecho, desde la misma ciudad podrás divisar esta zona natural que está al norte y que se distingue muy fácilmente porque hay instalada una vistosa torre de comunicaciones y, también, por el templo que hay en el Tibidabo.\n El Parc de Collserola se trata de un espacio natural que cuenta con 8000 hectáreas de flora y naturaleza. Aquí encontrarás especies como encinas, robles, pinos, etcétera. Es una visita interesante porque, además de zonas naturales, también te irás encontrando con ermitas e iglesias antiguas que le dan un aire auténtico a tu visita.\nY, por supuesto, uno de los espacios más visitados de Collserola por todas las familias es el parque de Tibidabo, un parque de atracciones que cuenta con unas imponentes vistas de la ciudad condal. Por este motivo, es uno de los destinos favoritos entre familias que quieren hacer excursiones cerca de Barcelona, ¡tienes que visitarlo!",
+        "text_ca": "Comencem aquesta llista amb els millors parcs naturals prop de Barcelona per parlar-te del Parc natural de la serra de Collserola que és l'espai natural més proper a la ciutat comtal. De fet, des de la mateixa ciutat podràs divisar aquesta zona natural que està al nord i que es distingeix molt fàcilment perquè hi ha instal·lada una vistosa torre de comunicacions i, també, pel temple que hi ha al Tibidabo.\n El Parc de Collserola és un espai natural que compta amb 8000 hectàrees de flora i natura. Aquí trobaràs espècies com alzines, roures, pins, etc. És una visita interessant perquè, a més de zones naturals, també et trobaràs amb ermites i esglésies antigues que li donen un aire autèntic a la teva visita.\nI, per descomptat, un dels espais més visitats de Collserola per totes les famílies és el parc de Tibidabo, un parc d'atraccions que compta amb unes imponents vistes de la ciutat comtal. Per aquest motiu, és un dels destinacions favorites entre famílies que volen fer excursions prop de Barcelona, has de visitar-lo!",
+        "imatge": "https://cdn0.salir.com/es/posts/2/4/2/collserola_uno_de_los_parques_naturales_mas_cercanos_de_barcelona_242_0_600.webp"
+    },
+    {
+        "text":"Uno de los parques naturales de Barcelona ciudad y que merece la pena conocer es el Pantano de Vallvidrera, un embalse hidráulico que está situado en el barrio que le da nombre (Vallvidrera) y donde podrás encontrar un espacio natural perfecto para ir con tu familia o con amigos.\n Actualmente, este rincón es un oasis en la ciudad condal, ya que está rodeado de árboles y naturaleza que invita a la desconexión. El nivel del agua se mantiene en cotas altas gracias a la existencia de fuentes permanentes. Es un sitio perfecto para ir con perros en Barcelona y disfrutar de un picnic, así como una sesión refrescante para el verano.",
+        "text_ca": "Un dels parcs naturals de Barcelona ciutat i que val la pena conèixer és el Pantà de Vallvidrera, un embassament hidràulic que està situat al barri que li dóna nom (Vallvidrera) i on podràs trobar un espai natural perfecte per anar amb la teva família o amb amics.\n Actualment, aquest racó és un oasi a la ciutat comtal, ja que està envoltat d'arbres i natura que convida a la desconnexió. El nivell de l'aigua es manté en cotes altes gràcies a l'existència de fonts permanents. És un lloc perfecte per anar amb gossos a Barcelona i gaudir d'un pícnic, així com una sessió refrescant per a l'estiu.",
+        "titol": "Pantano de Vallvidrera",
+        "titol_ca": "Pantà de Vallvidrera",
+        "id": 2,
+        "nom": "vallvidrera",
+        "imatge": "https://cdn0.salir.com/es/posts/2/4/2/pantano_de_vallvidrera_242_1_600.webp"
+    },
+    {
+        "text": "También cerca de Barcelona nos encontramos con el Montseny, otro de los lugares naturales más conocidos por los barceloneses y que se encuentra a menos de 50 kilómetros de la ciudad. Es tal la importancia natural de este parque que la UNESCO lo ha catalogado como Reserva de la Biosfera. Se trata de un lugar repleto de bosques y campos que parecen sacados de una postal.\n En el Montseny encontrarás tres conjuntos de montañas que son muy destacados: el Puig Drau, les Agudes, els Matagalls i el Turó de l'Home. Ideales para hacer senderismo, deportes de montaña, rutas en bicicleta... Es un espacio perfecto para salir de la rutina de la ciudad y disfrutar de un oasis de naturaleza a menos de 1 hora de Barcelona.",
+        "text_ca": "També prop de Barcelona ens trobem amb el Montseny, un altre dels llocs naturals més coneguts pels barcelonins i que es troba a menys de 50 quilòmetres de la ciutat. És tal la importància natural d'aquest parc que la UNESCO el ha catalogat com a Reserva de la Biosfera. Es tracta d'un lloc ple de boscos i camps que semblen trets d'una postal.\n Al Montseny trobaràs tres conjunts de muntanyes que són molt destacats: el Puig Drau, les Agudes, els Matagalls i el Turó de l'Home. ideals per fer senderisme, esports de muntanya, rutes en bicicleta... És un espai perfecte per sortir de la rutina de la ciutat i gaudir d'un oasi de natura a menys d'1 hora de Barcelona.",
+        "id": 3,
+        "nom": "montseny",
+        "titol": "Parque Natural del Montseny",
+        "titol_ca": "Parc Natural del Montseny",
+        "imatge": "https://cdn0.salir.com/es/posts/2/4/2/parque_natural_del_montseny_242_2_600.webp"
+    }
+]
