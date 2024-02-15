@@ -1,0 +1,24 @@
+/* App.css */
+.App {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .container {
+    width: 200px;
+    height: 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+
+  .container.highlight {
+    background-color: yellow;
+  }
+  
+  .item {
+    border: 1px solid #000;
+    padding: 8px;
+    margin-bottom: 5px;
+    background-color: #fff;
+  }
+  
