@@ -3,10 +3,14 @@ import Tarea from './Tarea.jsx';
 
 function App()
 {
-  const [listaTareas, setListaTareas] = useState([]);
+  const [listaTareas, setListaTareas] = useState(() => {
+    const savedList = localStorage.getItem("tareas");
+    return JSON.parse(savedList) || [];
+  })
+  
   const [tarea, setTarea] = useState("");
-  const [newIndex, setNewIndex] = useState(0);
   const [type, setNewType] = useState("TRABAJO");
+  const [pressed, setPressed] = useState("TRABAJO");
 
   function handleChange(x){
     if(x.target.name == "tarea")
@@ -16,27 +20,21 @@ function App()
   }
 
   function nuevaTarea(){
-    var newObj = {"id":newIndex, "name":tarea,"type":type}
+    var newObj = {"id":listaTareas.length, "name":tarea,"type":type}
     setListaTareas([...listaTareas, newObj])
     setTarea("");
-    setNewIndex(newIndex+1);
+    localStorage.setItem("tareas", JSON.stringify([...listaTareas, newObj]));
   }
 
   function eliminaTarea(id){
-    setListaTareas(listaTareas.filter(x=> x.id != id));
+    const updatedList = listaTareas.filter(x=> x.id != id);
+    setListaTareas(updatedList);
+    localStorage.setItem("tareas", JSON.stringify(updatedList));
   }
 
   function setType(x){
-    switch(x.target.name){
-      case "TRABAJO":
-        return setNewType("TRABAJO");
-      case 'PERSONAL':
-        return setNewType("PERSONAL");
-      case 'URGENTE':
-        return setNewType("URGENTE");
-      case 'FAMILIA':
-        return setNewType("FAMILIA");
-    }
+   setNewType(x.target.name);
+   setPressed(x.target.name);
   }
 
   return (
@@ -48,11 +46,12 @@ function App()
         <div className="flex flex-col items-center">
           <input onChange={handleChange} name="tarea" value={tarea} className="border border-indigo-500 mb-5" type="text"></input>
           <div className="flex flex-row gap-2">
-            <button onClick={setType} name="TRABAJO" className="bg-blue-300 p-2 rounded-md hover:bg-blue-400">Trabajo</button>
-            <button onClick={setType} name="PERSONAL" className="bg-green-300 p-2 rounded-md hover:bg-green-400">Personal</button>
-            <button onClick={setType} name="URGENTE" className="bg-red-300 p-2 rounded-md hover:bg-red-400">Urgente</button>
-            <button onClick={setType} name="FAMILIA" className="bg-orange-300 p-2 rounded-md hover:bg-orange-400">Familia</button>
-          </div>
+        <button onClick={setType} name="TRABAJO" className={`bg-blue-300 p-2 rounded-md  ${pressed === "TRABAJO" ? "bg-blue-500 text-white" : "hover:bg-blue-400"}`}>Trabajo</button>
+        <button onClick={setType} name="PERSONAL" className={`bg-green-300 p-2 rounded-md ${pressed === "PERSONAL" ? "bg-green-500 text-white" : "hover:bg-green-400"}`}>Personal</button>
+        <button
+          onClick={setType} name="URGENTE" className={`bg-red-300 p-2 rounded-md ${pressed === "URGENTE" ? "bg-red-500 text-white" : "hover:bg-red-400"}`}>Urgente</button>
+        <button onClick={setType} name="FAMILIA" className={`bg-orange-300 p-2 rounded-md ${pressed === "FAMILIA" ? "bg-orange-500 text-white" : "hover:bg-orange-400"}`}>Familia</button>
+      </div>
           <button onClick={nuevaTarea} className="bg-blue-500 rounded-lg text-white w-48 p-1 mt-5">Enviar</button>
         </div>
       </div>
