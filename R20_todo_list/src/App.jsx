@@ -21,7 +21,7 @@ function App()
 
   function nuevaTarea(){
     var newObj = {"id":listaTareas.length, "name":tarea,"type":type}
-    setListaTareas([...listaTareas, newObj])
+    setListaTareas([...listaTareas, newObj]);
     setTarea("");
     localStorage.setItem("tareas", JSON.stringify([...listaTareas, newObj]));
   }
